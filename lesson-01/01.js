@@ -3,11 +3,11 @@
 
 // your code
 let sum = 0;
-let number = 1;
+let number = 0;
 
 while (number <= 20) {
+    sum = number + sum;
     number = number + 1;
-    sum = sum + number;
 }
 
     console.log (sum);
