@@ -18,9 +18,12 @@ let isAccess
 
 if ((isAdmin || isVerifiedUser) &&
     (hasSpecialPermission || hasTemporaryPass)) {
+    isAccess = true;
     console.log('Доступ получен!'); 
+    console.log(isAdmin); 
     }
 else {
+    isAccess = false;
     console.log('Доступ запрещен!');
 }
         
