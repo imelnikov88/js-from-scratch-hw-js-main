@@ -5,13 +5,11 @@
 */
 
 // your code
-let sum = 0;
-let number = 1;
+let sum = 0
+let num = 1
 
-while (number <= 20) {
-  sum = sum + (number % 20); // остаток совпадает с самим числом, кроме 20 → там 0
-  number = number + 2;       // идём только по нечётным
-  console.log(sum);
+while (num <= 20) {
+  sum = sum + (num % 20);
+  num += 2;
 }
-
-console.log(sum); // 100
+console.log(sum);
