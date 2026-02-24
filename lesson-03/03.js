@@ -10,4 +10,4 @@ function findLargest(a, b, c) {
     }
 }
 
-console.log(findLargest(5, 3, 2));
+console.log(findLargest(15, 33, 24));
