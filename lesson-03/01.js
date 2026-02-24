@@ -4,4 +4,4 @@ function calculateAverage(oneNumder, twoNumber) {
     return (oneNumder + twoNumber) / 2;
 }
 
-console.log(calculateAverage(5, 10));
+console.log(calculateAverage(5, 11));
