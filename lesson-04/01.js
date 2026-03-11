@@ -19,4 +19,4 @@ function doubleEachCharacter(str) {
     .join('');
 }
 
-console.log(doubleEachCharacter("hello"));
+console.log(doubleEachCharacter("hello"))
