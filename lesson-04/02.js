@@ -14,19 +14,26 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-
-function findUniqueElements(array) {
-  const result = [];
-
+function includesElement(array, element) {
   for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-
-    if (!result.includes(element)) {
-      result.push(element);
+    if (array[i] === element) {
+      return true;
     }
   }
+  return false;
+}
 
-  return result;
+console.log(includesElement([1, 2, 3], 2));
+
+
+function findUniqueElements(array) {
+    let result = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!includesElement(result, array[i])) {
+        result.push(array[i]);
+    }
+}
+return result;
 }
 
 console.log(findUniqueElements([1, 2, 3, 2, 1, 4]));
