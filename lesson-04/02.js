@@ -36,4 +36,4 @@ function findUniqueElements(array) {
 return result;
 }
 
-console.log(findUniqueElements([1, 2, 3, 2, 1, 4]));
+console.log(findUniqueElements([1, 2, 3, 2, 1, 4]))
