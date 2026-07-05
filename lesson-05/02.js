@@ -36,8 +36,7 @@ const gallery = {
 }
 
 function updateGallery(object, name, value) {
-  object[name] = value; {
-  }
+  object[name] = value;
 }
 
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
