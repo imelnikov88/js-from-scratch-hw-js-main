@@ -19,9 +19,7 @@ function includesElement(array, element) {
       return true;
     }
   }
-
   return false;
 }
 
-console.log(includesElement([1, 2, 3], 2)); // true
-console.log(includesElement([1, 2, 3], 5)); // false
+console.log(includesElement([1, 2, 3], 2));

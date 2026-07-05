@@ -26,16 +26,14 @@ function includesElement(array, element) {
 console.log(includesElement([1, 2, 3], 2));
 
 
-
-function findUniqueElements (array) {
-  let uniqElem = []
-    for (let i = 0; i < array.length; i++) {
-      if (!includesElement(uniqElem, array[i])) {
-        uniqElem.push(array[i])
-      }
+function findUniqueElements(array) {
+    let result = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!includesElement(result, array[i])) {
+        result.push(array[i]);
     }
-    return uniqElem
+}
+return result;
 }
 
-let result = findUniqueElements([1, 2, 3, 2, 1, 4])
-console.log(result);
+console.log(findUniqueElements([1, 2, 3, 2, 1, 4]));
